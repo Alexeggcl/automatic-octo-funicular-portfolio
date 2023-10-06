@@ -1,10 +1,10 @@
 import Header from '@/components/header'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Comfortaa } from 'next/font/google'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Comfortaa({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Alex | Personal Portfolio',
