@@ -40,15 +40,7 @@ export const experiencesData = [
     description:
       "I graduated after 4 years of studying. I immediately found a job as a full-stack developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2022",
-  },
-  {
-    title: "Master Degree in Video Game Development",
-    location: "Universidad Complutense de madrid",
-    description:
-      "I graduated after one year of studying. Made Shuvani as a Master's Thesis.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    date: "2018 - 2022",
   },
   {
     title: "Full-Stack Developer - Project Manager",
@@ -57,6 +49,14 @@ export const experiencesData = [
       "During my internship, I played a crucial role in managing multiple client projects, overseeing effective communication, leading weekly progress meetings, providing technical support for incidents, and documenting new requirements as my responsibilities expanded within the team.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - present",
+  },
+  {
+    title: "Master Degree in Video Game Development",
+    location: "Universidad Complutense de madrid",
+    description:
+      "I graduated after one year of studying. Made Shuvani as a Master's Thesis.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - 2023",
   },
   {
     title: "Game Developer",
