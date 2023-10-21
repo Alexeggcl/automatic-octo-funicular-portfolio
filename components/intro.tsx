@@ -47,9 +47,9 @@ export default function Intro() {
                 animate={{ opacity: 1, y: 0 }}
             >
                 <span className="font-bold">
-                    Hello, I'm Alejandro. I'm a 
-                    <span className="text-[#ffd864]"> full-stack developer </span> 
-                    with three years of experience and a one-year journey into the world of 
+                    Hello, I'm Alejandro. I'm a
+                    <span className="text-[#ffd864]"> full-stack developer </span>
+                    with three years of experience and a one-year journey into the world of
                     <span className="text-[#ffd864]"> game programmer</span>.
                 </span>
             </motion.h1>

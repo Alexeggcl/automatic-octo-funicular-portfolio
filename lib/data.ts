@@ -1,6 +1,9 @@
+import ShuvaniAbout, { NautilooseAbout, NeutrumAbout, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
 import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
+import shuvaniReward from "@/public/ShuvaniImages/RewardPedestal.png";
+import shuvaniGIF from "@/public/ShuvaniImages/ShuvaniGIF.gif";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaArrowAltCircleRight, FaCodeBranch, FaCss3, FaDatabase, FaGamepad, FaGit, FaHtml5, FaJava, FaJenkins, FaJsSquare, FaNodeJs, FaReact, FaUnity } from "react-icons/fa";
@@ -91,6 +94,44 @@ export const projectsData = [
     imageUrl: neutrumImg,
   },
 ] as const;
+
+export const projectsDataMoreInfo = [
+  {
+    title: "Shuvani",
+    video: "w0lvPH7C1Uk",
+    about: React.createElement(ShuvaniAbout),
+    details: React.createElement(ShuvaniDetails),
+    gif: shuvaniGIF,
+    myTasks: React.createElement(ShuvaniTasks),
+    imgages: [
+      shuvaniReward,
+      neutrumImg,
+      nautilooseImg
+    ]
+  },
+  {
+    title: "Nautiloose Club",
+    video: "w0lvPH7C1Uk",
+    about: React.createElement(NautilooseAbout),
+    details: "Details",
+    gif: shuvaniGIF,
+    myTasks: "Task",
+    imgages: [
+      shuvaniReward
+    ]
+  },
+  {
+    title: "Neutrum",
+    video: "w0lvPH7C1Uk",
+    about: React.createElement(NeutrumAbout),
+    details: "Details",
+    gif: shuvaniGIF,
+    myTasks: "Task",
+    imgages: [
+      shuvaniReward
+    ]
+  }
+] as const
 
 export const skillsData = [
   { name: "Unreal Engine", icon: FaGamepad, pctg: "Great" },
