@@ -69,6 +69,7 @@ export default function Intro() {
                         setActiveSection("Contact");
                         setTimeOfLastClick(Date.now());
                     }}
+                    aria-label='Contact me here Link'
                 >
                     Contact me here{" "}
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -77,6 +78,7 @@ export default function Intro() {
                     className="group bg-white px-7 py-3 flex items-center hover:text-[#ffd864] gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:bg-white/10"
                     href="/CV.pdf"
                     download
+                    aria-label='download CV'
                 >
                     Download CV{" "}
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -86,6 +88,7 @@ export default function Intro() {
                     className="bg-white p-4 text-gray-700 hover:text-[#ffd864] flex items-center gap-2 border border-[#ffd864] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"
                     href="https://www.linkedin.com/in/alejandroegg/"
                     target="_blank"
+                    aria-label='LinkeIn page'
                 >
                     <BsLinkedin />
                 </a>
@@ -94,6 +97,7 @@ export default function Intro() {
                     className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] border border-[#ffd864] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-[#ffd864] active:scale-105 transition cursor-pointer bg-white/10 text-white/60"
                     href="https://github.com/Alexeggcl"
                     target="_blank"
+                    aria-label='Github page'
                 >
                     <FaGithubSquare />
                 </a>
