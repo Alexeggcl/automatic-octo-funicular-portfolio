@@ -19,30 +19,23 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        After graduating as a <span className="font-medium text-[#ffd864]">computer engineer</span>,
+        I decided to pursue my true passion for <span className="font-medium text-[#ffd864]">video game development</span>.
+        I enrolled in a master's program in game development, where I gained a solid foundation in the industry.
+        Throughout this journey, I honed my skills in <span className="font-medium text-[#ffd864]">Unreal Engine and C++</span>,
+        as well as <span className="font-medium text-[#ffd864]">Unity and C#</span>.
+        My favorite aspect of programming is the constant quest for creative solutions to challenges.
       </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="mb-3">
+        Meanwhile, I also expanded my expertise in <span className="font-medium text-[#ffd864]">full-stack development</span> and 
+        <span className="font-medium text-[#ffd864]">project management</span>. 
+        I delved into technologies like <span className="font-medium text-[#ffd864]">Java, React, JavaScript, and SQL Server</span>. 
+        Additionally, I acquired experience in <span className="font-medium text-[#ffd864]">client interaction, agile methodologies, and effective teamwork</span>.
+      </p>
+      <p className="mb-3">
+        When I'm not immersed in code, I enjoy playing video games, from popular titles to indie gems, always on the lookout for hidden treasures. 
+        I'm also a cinema enthusiast, having completed a small course in filmmaking. However, when I seek a break from technology, 
+        I find solace in reading and exploring the worlds of fantasy and science fiction, or simply spending quality time with my cat.
       </p>
     </motion.section>
   );
