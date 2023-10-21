@@ -40,9 +40,9 @@ export default function Experience() {
                                 boxShadow: "0 0 0 4px #ffd864, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"
                             }}
                         >
-                            <h3 className="font-semibold capitalize">{item.title}</h3>
-                            <p className="font-normal !mt-0">{item.location}</p>
-                            <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                            <h3 className="font-semibold capitalize text-white">{item.title}</h3>
+                            <p className="font-normal !mt-0 text-white">{item.location}</p>
+                            <p className="!mt-1 !font-normal text-white">
                                 {item.description}
                             </p>
                         </VerticalTimelineElement>

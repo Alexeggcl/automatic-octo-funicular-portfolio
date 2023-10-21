@@ -50,7 +50,7 @@ export default function SkillsContent({
 
     return (
         <motion.li
-            className="border rounded-xl border-[#ffd864] px-5 py-3 bg-white/10 text-white/80 flex items-center gap-2 group transition-opacity duration-300 ease-in-out hover:opacity-0 overflow-hidden min-w-[120px]"
+            className="border rounded-xl border-[#ffd864] px-5 py-3 bg-white/10 text-white flex items-center gap-2 group transition-opacity duration-300 ease-in-out hover:opacity-0 overflow-hidden min-w-[120px]"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
