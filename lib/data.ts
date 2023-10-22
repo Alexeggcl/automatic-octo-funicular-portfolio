@@ -1,4 +1,4 @@
-import ShuvaniAbout, { NautilooseAbout, NeutrumAbout, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
+import ShuvaniAbout, { NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
 import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
@@ -12,6 +12,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaArrowAltCircleRight, FaCodeBranch, FaCss3, FaDatabase, FaGamepad, FaGit, FaHtml5, FaJava, FaJenkins, FaJsSquare, FaNodeJs, FaReact, FaUnity } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import NInGame from "@/public/NautilooseImages/NInGame.png";
+import NMainMenu from "@/public/NautilooseImages/NMainMenu.png";
+import NRawPurchase from "@/public/NautilooseImages/NRawPurchase.png";
+import NStuff from "@/public/NautilooseImages/NStuff.png";
+import NTable from "@/public/NautilooseImages/NTable.png";
+import NGIF from "@/public/NautilooseImages/NGIF.gif";
 
 export const links = [
   {
@@ -117,13 +123,17 @@ export const projectsDataMoreInfo = [
   },
   {
     title: "Nautiloose Club",
-    video: "w0lvPH7C1Uk",
+    video: "KTFEDOM31Ys",
     about: React.createElement(NautilooseAbout),
-    details: "Details",
-    gif: shuvaniGIF,
-    myTasks: "Task",
+    details: React.createElement(NautilooseDetails),
+    gif: NGIF,
+    myTasks: React.createElement(NautilooseTasks),
     imgages: [
-      shuvaniReward
+      NInGame,
+      NMainMenu,
+      NRawPurchase,
+      NStuff,
+      NTable
     ]
   },
   {
@@ -132,7 +142,7 @@ export const projectsDataMoreInfo = [
     about: React.createElement(NeutrumAbout),
     details: "Details",
     gif: shuvaniGIF,
-    myTasks: "Task",
+    myTasks: "",
     imgages: [
       shuvaniReward
     ]

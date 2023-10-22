@@ -53,7 +53,7 @@ function ProjectDetails({ projectData, isPopupOpen, onClose, handleOverlayClick 
             onClick={handleOverlayClick}
         >
             <div className="relative max-w-screen-sm w-full">
-                <div className="relative rounded-lg shadow bg-gray-700 overflow-y-auto max-h-[80vh]">
+                <div className="relative rounded-lg shadow bg-gray-700 overflow-y-auto max-h-[85vh]">
                     <div className="sticky top-0 bg-gray-700 z-10 flex items-start justify-between p-4 border-b-2 rounded-t border-gray-600">
                         <h3 className="text-xl font-semibold text-white">
                             {projectDataInfo?.title}
@@ -73,6 +73,7 @@ function ProjectDetails({ projectData, isPopupOpen, onClose, handleOverlayClick 
                             src={`https://www.youtube.com/embed/${projectDataInfo?.video}`}
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
                         />
                         <h3 className="text-[#ffd864]">About</h3>
                         {projectDataInfo?.about}

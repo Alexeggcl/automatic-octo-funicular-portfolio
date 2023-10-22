@@ -38,15 +38,11 @@ export default function Project({
     };
 
     useEffect(() => {
-        // Aplicar overflow: hidden al body cuando el modal se abre
         if (isPopupOpen) {
             document.body.style.overflow = "hidden";
         } else {
-            // Eliminar overflow: hidden cuando el modal se cierra
             document.body.style.overflow = "auto";
         }
-
-        // Limpieza cuando el componente se desmonta
         return () => {
             document.body.style.overflow = "auto";
         };
@@ -54,12 +50,12 @@ export default function Project({
 
     return (
         <>
-            <ProjectDetails
+            {isPopupOpen && <ProjectDetails
                 projectData={{ title, description }} // Pasa los datos del proyecto
                 isPopupOpen={isPopupOpen} // Estado del popup
                 onClose={handleClosePopup} // Función para cerrar el popup
                 handleOverlayClick={handleOverlayClick}
-            />
+            />}
             <motion.div
                 ref={ref}
                 style={{

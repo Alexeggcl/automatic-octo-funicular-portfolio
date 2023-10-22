@@ -44,10 +44,45 @@ export const ShuvaniTasks = () => {
 
 export const NautilooseAbout = () => {
     return (
-        <p className="text-base leading-relaxed text-gray-400" >
-            Nautiloose Club is an <span className="text-[#ffd864]">coso de gestion de people</span>
-        </p>
+        <div className="text-base leading-relaxed text-white">
+            <p className="text-base leading-relaxed mb-4">
+                In one of the most mysterious and uncharted realms of the vast ocean, where sunlight never dares to venture,
+                lies Nautiloose Club an enticing nocturnal haven within the Abyssal Zone. Here, amidst the depths, emerges a thriving nightclub,
+                teeming with abyssal fish, jellyfish, and giant squids as they awaken with the night.
+            </p>
+            <p>
+                Dive into the enigmatic aquatic world of Nautiloose Club, embracing the role of a <span className="text-[#ffd864]">club manager</span> in this beacon of untapped potential.
+            </p>
+        </div>
     )
+};
+
+export const NautilooseDetails = () => {
+    return (
+        <div className="text-white">
+            <p className="text-base leading-relaxed">Technologies Used:</p>
+            <ul className="list-disc pl-5">
+                <li> <span className="text-[#ffd864]">Unity 2D</span></li>
+                <li> <span className="text-[#ffd864]">Github</span></li>
+                <li>Discord</li>
+            </ul>
+            <p className="text-base leading-relaxed">Programming Language: <span className="text-[#ffd864]">C#</span></p>
+            <p className="text-base leading-relaxed">Available on <span className="text-[#ffd864]">Itch.io</span></p>
+        </div>
+    );
+};
+
+export const NautilooseTasks = () => {
+    return (
+        <div className="text-white">
+            <p className="text-base leading-relaxed mb-4">
+                Programmer: For this project, I was responsible for managing both employees and customers during the night. In the case of customers, this included handling entrance and exit to the bar, taking requests for services (such as drinks or dancing), or even escorting them out of the club. For the employees, I oversaw patrols between different areas of the bar and taking note of customer requests, providing them with their services. I also handled the movement of the fish throughout the club.
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                Other: Other tasks I took on included integrating 2D animations for some of the fish and also designing the instructions screen between the main menu and the game.
+            </p>
+        </div>
+    );
 };
 
 export const NeutrumAbout = () => {
