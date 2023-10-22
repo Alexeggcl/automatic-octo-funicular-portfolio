@@ -1,4 +1,4 @@
-import ShuvaniAbout, { NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
+import ShuvaniAbout, { NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, NeutrumDetails, NeutrumTasks, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
 import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
@@ -146,9 +146,9 @@ export const projectsDataMoreInfo = [
     title: "Neutrum",
     video: null,
     about: React.createElement(NeutrumAbout),
-    details: "Details",
+    details: React.createElement(NeutrumDetails),
     gif: null,
-    myTasks: "",
+    myTasks: React.createElement(NeutrumTasks),
     imgages: [
       NEAggregated,
       NELocations,
