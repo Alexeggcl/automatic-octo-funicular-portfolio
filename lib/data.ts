@@ -19,6 +19,12 @@ import NStuff from "@/public/NautilooseImages/NStuff.png";
 import NTable from "@/public/NautilooseImages/NTable.png";
 import NGIF from "@/public/NautilooseImages/NGIF.gif";
 
+import NEAggregated from "@/public/NeutrumImages/NEAggregated.png";
+import NELocations from "@/public/NeutrumImages/NELocations.png";
+import NEMap from "@/public/NeutrumImages/NEMap.png";
+import NESensorForm from "@/public/NeutrumImages/NESensorForm.png";
+import NESensors from "@/public/NeutrumImages/NESensors.png";
+
 export const links = [
   {
     name: "Home",
@@ -138,13 +144,17 @@ export const projectsDataMoreInfo = [
   },
   {
     title: "Neutrum",
-    video: "w0lvPH7C1Uk",
+    video: null,
     about: React.createElement(NeutrumAbout),
     details: "Details",
-    gif: shuvaniGIF,
+    gif: null,
     myTasks: "",
     imgages: [
-      shuvaniReward
+      NEAggregated,
+      NELocations,
+      NEMap,
+      NESensorForm,
+      NESensors
     ]
   }
 ] as const

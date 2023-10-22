@@ -67,23 +67,23 @@ function ProjectDetails({ projectData, isPopupOpen, onClose, handleOverlayClick 
                         </button>
                     </div>
                     <div className="p-6 space-y-6">
-                        <iframe
+                        {projectDataInfo?.video && <iframe
                             width="100%"
                             height="315"
                             src={`https://www.youtube.com/embed/${projectDataInfo?.video}`}
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                        />
+                        />}
                         <h3 className="text-[#ffd864]">About</h3>
                         {projectDataInfo?.about}
                         <h3 className="text-[#ffd864]">Details</h3>
                         {projectDataInfo?.details}
-                        <Image
+                        {projectDataInfo?.gif && <Image
                             src={projectDataInfo!.gif}
                             alt="GIF Image"
                             className="rounded-xl w-full"
-                        />
+                        />}
                         <h3 className="text-[#ffd864]">Tasks</h3>
                         {projectDataInfo?.myTasks}
                         <Carousel style={{ height: "350px" }} theme={themeCarousel}>
