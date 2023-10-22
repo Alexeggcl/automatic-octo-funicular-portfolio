@@ -81,6 +81,7 @@ function ProjectDetails({ projectData, isPopupOpen, onClose, handleOverlayClick 
                         <Image
                             src={projectDataInfo!.gif}
                             alt="GIF Image"
+                            className="rounded-xl w-full"
                         />
                         <h3 className="text-[#ffd864]">Tasks</h3>
                         {projectDataInfo?.myTasks}

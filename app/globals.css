@@ -17,3 +17,25 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffd864;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a98f42; /* Cambio de color al pasar el mouse por encima del thumb */
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; /* Espacio en la esquina de la barra de desplazamiento */
+}

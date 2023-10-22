@@ -3,6 +3,10 @@ import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
 import shuvaniReward from "@/public/ShuvaniImages/RewardPedestal.png";
+import SPickables from "@/public/ShuvaniImages/SPickables.png";
+import SLaser from "@/public/ShuvaniImages/SLaser.png";
+import SEmemies from "@/public/ShuvaniImages/SEnemies.png";
+import SBoss from "@/public/ShuvaniImages/SBoss.png";
 import shuvaniGIF from "@/public/ShuvaniImages/ShuvaniGIF.gif";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
@@ -105,8 +109,10 @@ export const projectsDataMoreInfo = [
     myTasks: React.createElement(ShuvaniTasks),
     imgages: [
       shuvaniReward,
-      neutrumImg,
-      nautilooseImg
+      SPickables,
+      SLaser,
+      SEmemies,
+      SBoss
     ]
   },
   {
