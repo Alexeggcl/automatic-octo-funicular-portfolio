@@ -76,10 +76,14 @@ export const NautilooseTasks = () => {
     return (
         <div className="text-white">
             <p className="text-base leading-relaxed mb-4">
-                Programmer: For this project, I was responsible for managing both employees and customers during the night. In the case of customers, this included handling entrance and exit to the bar, taking requests for services (such as drinks or dancing), or even escorting them out of the club. For the employees, I oversaw patrols between different areas of the bar and taking note of customer requests, providing them with their services. I also handled the movement of the fish throughout the club.
+                I was responsible for creating the <span className="text-[#ffd864]">main menu, options, and credits</span> interfaces, as well as implementing seamless navigation between them.
+                I also handled the integration of all sound-related aspects using <span className="text-[#ffd864]">FMOD</span>.
             </p>
             <p className="text-base leading-relaxed mb-4">
-                Other: Other tasks I took on included integrating 2D animations for some of the fish and also designing the instructions screen between the main menu and the game.
+                Furthermore, I took on the tasks of <span className="text-[#ffd864]">level design, blocking, and dressing</span>. I <span className="text-[#ffd864]">incorporated animations</span> for the customers and developed materials for plant movement.
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                I also held the responsibility of <span className="text-[#ffd864]">managing both customers and dancers</span> during the night. For customers, I oversaw their entry and exit from the bar, as well as took care of their orders. As for the dancers, I coordinated their patrols throughout different areas of the bar and their performances for the customers' enjoyment.
             </p>
         </div>
     );
@@ -106,10 +110,9 @@ export const NeutrumAbout = () => {
 export const NeutrumDetails = () => {
     return (
         <div className="text-white">
-            <p className="text-base leading-relaxed">Technologies Used:</p>
             <ul className="list-disc pl-5">
-                <li>The Frontend has been created using JavaScript and React. Additionally, the DevExtreme suite of components and tools has been used.</li>
-                <li>The Backend is developed in Java and Spring. The database is with JDBC and SQL Server.</li>
+                <li>The Frontend has been created using <span className="text-[#ffd864]">JavaScript and React</span>. Additionally, the <span className="text-[#ffd864]">DevExtreme</span> suite of components and tools has been used.</li>
+                <li>The Backend is developed in <span className="text-[#ffd864]">Java and Spring</span>. The database is with <span className="text-[#ffd864]">JDBC and SQL Server</span>.</li>
                 <li>Asana</li>
                 <li>Confluence</li>
             </ul>
@@ -120,7 +123,21 @@ export const NeutrumDetails = () => {
 export const NeutrumTasks = () => {
     return (
         <div className="text-white">
-            TODO
+            <p className="text-base leading-relaxed mb-4">
+                Creation of the <span className="text-[#ffd864]">Administration</span> Frontend: An administration interface was developed to allow users to create, edit, or delete database elements. Users can view a table with the existing data, such as sensors, locations, devices, etc.
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                Creation of a <span className="text-[#ffd864]">Monitoring</span> Frontend: An interface that allows users to view data collected by sensors, perform tests on devices, locate them on the map, and more.
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                Creation of a <span className="text-[#ffd864]">Dashboard</span> Frontend: An interface for users to visualize current device measurements through graphs.
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                <span className="text-[#ffd864]">API optimization</span>: Modifications were made to the backend to enhance the efficiency of queries through the API.
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                <span className="text-[#ffd864]">Refactoring and optimization</span> of Java code: Changes were made to the existing Java code to improve its structure and performance.
+            </p>
         </div>
     );
 };

@@ -64,7 +64,7 @@ export default function Intro() {
             >
                 <Link
                     href="#contact"
-                    className="group bg-gray-900 text-white px-7 hover:text-[#ffd864] py-3 flex items-center gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10"
+                    className="group bg-gray-900 text-white px-7 hover:text-[#ffd864] py-3 flex items-center gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition bg-white/10"
                     onClick={() => {
                         setActiveSection("Contact");
                         setTimeOfLastClick(Date.now());
@@ -75,7 +75,7 @@ export default function Intro() {
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
                 <a
-                    className="group bg-white px-7 py-3 flex items-center hover:text-[#ffd864] gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:bg-white/10"
+                    className="group bg-white px-7 py-3 flex items-center hover:text-[#ffd864] gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer bg-white/10"
                     href="/CV.pdf"
                     download
                     aria-label='download CV'
@@ -85,7 +85,7 @@ export default function Intro() {
                 </a>
 
                 <a
-                    className="bg-white p-4 text-gray-700 hover:text-[#ffd864] flex items-center gap-2 border border-[#ffd864] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"
+                    className="bg-white p-4 text-gray-700 hover:text-[#ffd864] flex items-center gap-2 border border-[#ffd864] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer bg-white/10 text-white/60"
                     href="https://www.linkedin.com/in/alejandroegg/"
                     target="_blank"
                     aria-label='LinkeIn page'
