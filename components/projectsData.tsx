@@ -142,4 +142,65 @@ export const NeutrumTasks = () => {
     );
 };
 
+export const ParkingAbout = () => {
+    return (
+        <div className="text-white">
+            <p className="text-base leading-relaxed mb-4">
+                The Parking Booking project stems from Archibus' Workplace module with the aim of providing users with a fast and <span className="text-[#ffd864]">easy way to reserve parking spaces</span>.
+                It has been designed following the standards of other applications, maintaining coherence both in its aesthetics and functionality.
+                Personally, I was responsible for its comprehensive development, from <span className="text-[#ffd864]">creating the database</span> to implementing necessary <span className="text-[#ffd864]">backend functions</span>,
+                and building the entire <span className="text-[#ffd864]">frontend using React</span>.
+            </p>
+        </div>
+    )
+};
+
+export const ParkingDetails = () => {
+    return (
+        <div className="text-white">
+            <ul className="list-disc pl-5">
+                <li>The Frontend has been created using <span className="text-[#ffd864]">JavaScript and React</span>.</li>
+                <li>The Backend is developed in <span className="text-[#ffd864]">Java</span>. The database is with <span className="text-[#ffd864]">SQL Server</span>.</li>
+                <li>Asana</li>
+                <li>Confluence</li>
+                <li>Notion</li>
+            </ul>
+        </div>
+    );
+};
+
+export const ParkingTasks = () => {
+    return (
+        <div className="text-white">
+            <p className="text-base leading-relaxed mb-4">
+                Parking Area Reservations divided into two types:
+                <ul className="list-disc pl-5">
+                    <li><span className="text-[#ffd864]">Unassigned</span> Parking Areas: Represent parking spaces where users don’t select an exact space but have a <span className="text-[#ffd864]">pool of options upon arrival</span>.</li>
+                    <li><span className="text-[#ffd864]">Assigned</span> Parking Areas: Represent parking spaces where users <span className="text-[#ffd864]">must choose a specific space on the floorplan</span>.</li>
+                </ul>
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                Users can select their preferred <span className="text-[#ffd864]">time slot</span> from the available options within the area. Additionally, they can specify whether the reservation is for <span className="text-[#ffd864]">themselves, another available employee, or a visitor</span>.
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                Calendar Overview: Users can <span className="text-[#ffd864]">view their reservations on a calendar</span>. By clicking on each reservation, they can access its details, location on the map, and have the option to <span className="text-[#ffd864]">confirm or cancel</span> it.
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                Administrative Views in Archibus: Admins can easily <span className="text-[#ffd864]">manage all data</span>. This includes configuring parking areas, time slots, assigned spaces, and associated employees. They also have the ability to set up reservation confirmation requirements.
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                Integration with the client’s <span className="text-[#ffd864]">Access Control System</span>: This integration occurs in two ways:
+                <ul className="list-disc pl-5">
+                    <li><span className="text-[#ffd864]">Daily synchronization</span> to report accesses for the following day.</li>
+                    <li><span className="text-[#ffd864]">Real-time updates</span> to report accesses at the time of reservation..</li>
+                </ul>
+            </p>
+        </div>
+    );
+};
+
 export default ShuvaniAbout;

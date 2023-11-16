@@ -1,4 +1,4 @@
-import ShuvaniAbout, { NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, NeutrumDetails, NeutrumTasks, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
+import ShuvaniAbout, { NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, NeutrumDetails, NeutrumTasks, ParkingAbout, ParkingDetails, ParkingTasks, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
 import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
@@ -24,6 +24,13 @@ import NELocations from "@/public/NeutrumImages/NELocations.png";
 import NEMap from "@/public/NeutrumImages/NEMap.png";
 import NESensorForm from "@/public/NeutrumImages/NESensorForm.png";
 import NESensors from "@/public/NeutrumImages/NESensors.png";
+
+import PACard from "@/public/ParkingBooking/ParkingBookingCard.png";
+import PACalendar from "@/public/ParkingBooking/ParkingBookingCalendar.png";
+import PAFloorList from "@/public/ParkingBooking/ParkingBookingFloorList.png";
+import PAFloorPlan from "@/public/ParkingBooking/ParkingBookingFloorPlan.png";
+import PAStart from "@/public/ParkingBooking/ParkingBookingStart.png";
+import PASummary from "@/public/ParkingBooking/ParkingBookingSummary.png";
 
 export const links = [
   {
@@ -109,6 +116,13 @@ export const projectsData = [
     tags: ["React", "DevExtreme", "SQL Server", "Java", "Spring"],
     imageUrl: neutrumImg,
   },
+  {
+    title: "Parking Booking",
+    description:
+      "Manage the use and reseravtion of parking spaces in your office, easily and efficiently.",
+    tags: ["Archibus", "React", "SQL Server", "Java"],
+    imageUrl: PACard,
+  }
 ] as const;
 
 export const projectsDataMoreInfo = [
@@ -155,6 +169,21 @@ export const projectsDataMoreInfo = [
       NEMap,
       NESensorForm,
       NESensors
+    ]
+  },
+  {
+    title: "Parking Booking",
+    video: null,
+    about: React.createElement(ParkingAbout),
+    details: React.createElement(ParkingDetails),
+    gif: null,
+    myTasks: React.createElement(ParkingTasks),
+    imgages: [
+      PAStart,
+      PAFloorPlan,
+      PAFloorList,
+      PACalendar,
+      PASummary
     ]
   }
 ] as const
