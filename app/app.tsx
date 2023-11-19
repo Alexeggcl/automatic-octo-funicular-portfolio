@@ -17,6 +17,6 @@ export default function App({
     children: React.ReactNode;
 }) {
     return (
-        <RootLayout children={children} />
+        <RootLayout children={undefined}/>
     );
 }
