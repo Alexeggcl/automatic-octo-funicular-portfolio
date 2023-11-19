@@ -3,6 +3,7 @@
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion, useAnimation } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const fadeInAnimationVariants = {
     initial: {
@@ -34,6 +35,8 @@ export default function SkillsContent({
     skill
 }: SkillsContentProps) {
     const controls = useAnimation();
+
+    const { t, i18n } = useTranslation();
 
     const handleHoverStart = (index: number) => {
         controls.start({
@@ -67,7 +70,7 @@ export default function SkillsContent({
                 <motion.div animate={controls}>
                     <motion.span >{skill.name}</motion.span>
                     <motion.span className="absolute top-[50px] left-0 w-full h-full opacity-100" >
-                        {skill.pctg}
+                        {t(skill.pctg)}
                     </motion.span>
                 </motion.div>
             </div>

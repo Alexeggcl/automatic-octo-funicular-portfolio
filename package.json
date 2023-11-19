@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@next/font": "^13.5.4",
     "clsx": "^2.0.0",
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.6.4",
     "framer-motion": "^10.16.4",
+    "i18next": "^23.7.6",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-i18next": "^13.5.0",
     "react-icons": "^4.11.0",
     "react-intersection-observer": "^9.5.2",
     "react-vertical-timeline-component": "^3.6.0"

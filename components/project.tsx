@@ -5,6 +5,7 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ProjectDetails from "./projectDetails";
+import { useTranslation } from "react-i18next";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -22,6 +23,8 @@ export default function Project({
     });
     const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
     const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+    const { t, i18n } = useTranslation();
 
     const handleOpenPopup = () => {
         setIsPopupOpen(true);
@@ -68,7 +71,7 @@ export default function Project({
                     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] max-sm:pt-[15rem]">
                         <h3 className="text-2xl font-semibold text-[#ffd864]">{title}</h3>
                         <p className="mt-2 leading-relaxed text-white">
-                            {description}
+                            {t(description)}
                         </p>
                         <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                             {tags.map((tag, index) => (
@@ -81,7 +84,7 @@ export default function Project({
                             ))}
                         </ul>
                         <button className="border border-[#ffd864] mt-2 block text-whit focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-[#111827] hover:bg-[#111827]/70 focus:ring-[#ffd864]" type="button" onClick={handleOpenPopup}>
-                            More Info
+                            {t("More Info")}
                         </button>
 
                     </div>

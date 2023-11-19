@@ -10,10 +10,12 @@ import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/lib/hooks';
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+    const { t, i18n } = useTranslation();
 
     return (
         <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
@@ -46,12 +48,20 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <span className="font-bold">
-                    Hello, I'm Alejandro. I'm a
-                    <span className="text-[#ffd864]"> full-stack developer </span>
-                    with three years of experience and a one-year journey into the world of
-                    <span className="text-[#ffd864]"> game programmer</span>.
-                </span>
+                {i18n.language === 'es' ?
+                    <span className="font-bold">
+                        Hola, soy Alejandro. Un
+                        <span className="text-[#ffd864]"> desarrollador full-stack </span>
+                        con tres años de experiencia y un año como 
+                        <span className="text-[#ffd864]"> programador de videojuegos</span>.
+                    </span> :
+                    <span className="font-bold">
+                        Hello, I'm Alejandro. I'm a
+                        <span className="text-[#ffd864]"> full-stack developer </span>
+                        with three years of experience and a one-year journey into the world of
+                        <span className="text-[#ffd864]"> game programmer</span>.
+                    </span>
+                }
             </motion.h1>
 
             <motion.div
@@ -62,25 +72,13 @@ export default function Intro() {
                     delay: 0.1,
                 }}
             >
-                <Link
-                    href="#contact"
-                    className="group bg-gray-900 text-white px-7 hover:text-[#ffd864] py-3 flex items-center gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition bg-white/10"
-                    onClick={() => {
-                        setActiveSection("Contact");
-                        setTimeOfLastClick(Date.now());
-                    }}
-                    aria-label='Contact me here Link'
-                >
-                    Contact me here{" "}
-                    <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-                </Link>
                 <a
                     className="group bg-white px-7 py-3 flex items-center hover:text-[#ffd864] gap-2 border border-[#ffd864] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer bg-white/10"
                     href="/CV.pdf"
                     download
                     aria-label='download CV'
                 >
-                    Download CV{" "}
+                    {t("Download CV")}{" "}
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 

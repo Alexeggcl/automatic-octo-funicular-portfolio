@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai"
 import { Carousel } from 'flowbite-react';
+import { useTranslation } from "react-i18next";
 
 
 type ProjectDetailsProps = {
@@ -46,6 +47,7 @@ const themeCarousel = {
 function ProjectDetails({ projectData, isPopupOpen, onClose, handleOverlayClick }: ProjectDetailsProps) {
 
     const projectDataInfo = projectsDataMoreInfo.find(e => e.title == projectData.title)
+    const { t } = useTranslation();
 
     return (
         <div
@@ -75,16 +77,16 @@ function ProjectDetails({ projectData, isPopupOpen, onClose, handleOverlayClick 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />}
-                        <h3 className="text-[#ffd864]">About</h3>
+                        <h3 className="text-[#ffd864]">{t("AboutProject")}</h3>
                         {projectDataInfo?.about}
-                        <h3 className="text-[#ffd864]">Details</h3>
+                        <h3 className="text-[#ffd864]">{t("Details")}</h3>
                         {projectDataInfo?.details}
                         {projectDataInfo?.gif && <Image
                             src={projectDataInfo!.gif}
                             alt="GIF Image"
                             className="rounded-xl w-full"
                         />}
-                        <h3 className="text-[#ffd864]">Tasks</h3>
+                        <h3 className="text-[#ffd864]">{t("Tasks")}</h3>
                         {projectDataInfo?.myTasks}
                         <Carousel style={{ height: "350px" }} theme={themeCarousel}>
                             {projectDataInfo!.imgages.map((elem, index) => {

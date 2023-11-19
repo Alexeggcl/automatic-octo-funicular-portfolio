@@ -1,29 +1,32 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ShuvaniAbout = () => {
+    const { t } = useTranslation();
     return (
         <p className="text-base leading-relaxed text-white" >
-            Shuvani is an <span className="text-[#ffd864]">Isometric Single Player Roguelike</span> where action and strategy complement each other in a unique combat system based on magic and music.
-            Unleash your inner power and fulfill your destiny.
-            I joined Raging Games during the July - September period as an AI programmer to help prepare the game for PlayStation Talents.
+            {t("Shuvani is an ")}<span className="text-[#ffd864]">{t("Isometric Single Player Roguelike")}</span>{t(" where action and strategy complement each other in a unique combat system based on magic and music.")}
+            {t("Unleash your inner power and fulfill your destiny.")}
+            {/* {t("I joined Raging Games during the July - September period as an gameplay programmer to help prepare the game for PlayStation Talents.")} */}
         </p>
     )
 };
 
 export const ShuvaniDetails = () => {
+    const { t } = useTranslation();
     return (
         <div className="text-white">
-            <p className="text-base leading-relaxed">Technologies Used:</p>
+            <p className="text-base leading-relaxed">{t("Technologies Used:")}</p>
             <ul className="list-disc pl-5">
                 <li> <span className="text-[#ffd864]">Unreal Engine 4</span></li>
                 <li> <span className="text-[#ffd864]">Perforce</span></li>
                 <li>HacknPlan</li>
                 <li>Jenkins</li>
             </ul>
-            <p className="text-base leading-relaxed">Programming Language: <span className="text-[#ffd864]">C++</span></p>
-            <p className="text-base leading-relaxed">Available on <span className="text-[#ffd864]">Steam</span></p>
+            <p className="text-base leading-relaxed">{t("Programming Language: ")}<span className="text-[#ffd864]">C++</span></p>
+            <p className="text-base leading-relaxed">{t("Available on ")}<span className="text-[#ffd864]">Steam</span></p>
             <p className="text-base leading-relaxed">
-                Currently, we are looking forward to presenting the project at the <span className="text-[#ffd864]">PlayStation Talents Spain</span> event.
+                {t("Currently, we are looking forward to presenting the project at the ")}<span className="text-[#ffd864]">{t("PlayStation Talents Spain")}</span>{t(" event.")}
             </p>
         </div>
     );
@@ -43,49 +46,50 @@ export const ShuvaniTasks = () => {
 };
 
 export const NautilooseAbout = () => {
+    const { t } = useTranslation();
     return (
         <div className="text-base leading-relaxed text-white">
             <p className="text-base leading-relaxed mb-4">
-                In one of the most mysterious and uncharted realms of the vast ocean, where sunlight never dares to venture,
-                lies Nautiloose Club an enticing nocturnal haven within the Abyssal Zone. Here, amidst the depths, emerges a thriving nightclub,
-                teeming with abyssal fish, jellyfish, and giant squids as they awaken with the night.
+                {t("In one of the most mysterious and uncharted realms of the vast ocean, where sunlight never dares to venture, lies Nautiloose Club an enticing nocturnal haven within the Abyssal Zone. Here, amidst the depths, emerges a thriving nightclub, teeming with abyssal fish, jellyfish, and giant squids as they awaken with the night.")}
             </p>
             <p>
-                Dive into the enigmatic aquatic world of Nautiloose Club, embracing the role of a <span className="text-[#ffd864]">club manager</span> in this beacon of untapped potential.
+                {t("Dive into the enigmatic aquatic world of Nautiloose Club, embracing the role of a ")}<span className="text-[#ffd864]">{t("club manager")}</span>{t(" in this beacon of untapped potential.")}
             </p>
         </div>
     )
 };
 
 export const NautilooseDetails = () => {
+    const { t } = useTranslation();
     return (
         <div className="text-white">
-            <p className="text-base leading-relaxed">Technologies Used:</p>
+            <p className="text-base leading-relaxed">{t("Technologies Used:")}</p>
             <ul className="list-disc pl-5">
                 <li> <span className="text-[#ffd864]">Unity 2D</span></li>
                 <li> <span className="text-[#ffd864]">Github</span></li>
                 <li>Discord</li>
             </ul>
-            <p className="text-base leading-relaxed">Programming Language: <span className="text-[#ffd864]">C#</span></p>
-            <p className="text-base leading-relaxed">Available on <span className="text-[#ffd864]">Itch.io</span></p>
+            <p className="text-base leading-relaxed">{t("Programming Language: ")}<span className="text-[#ffd864]">C#</span></p>
+            <p className="text-base leading-relaxed">{t("Available on ")}<span className="text-[#ffd864]">Itch.io</span></p>
         </div>
     );
 };
 
 export const NautilooseTasks = () => {
+    const { t } = useTranslation();
     return (
         <div className="text-white">
             <p className="text-base leading-relaxed mb-4">
-                I was responsible for creating the <span className="text-[#ffd864]">main menu, options, and credits</span> interfaces, as well as implementing seamless navigation between them.
-                I also handled the integration of all sound-related aspects using <span className="text-[#ffd864]">FMOD</span>.
+                {t("I was responsible for creating the ")}<span className="text-[#ffd864]">{t("main menu, options, and credits")}</span>{t(" interfaces, as well as implementing seamless navigation between them.")}
+                {t("I also handled the integration of all sound-related aspects using ")}<span className="text-[#ffd864]">FMOD</span>.
             </p>
             <p className="text-base leading-relaxed mb-4">
-                Furthermore, I took on the tasks of <span className="text-[#ffd864]">level design, blocking, and dressing</span>. I <span className="text-[#ffd864]">incorporated animations</span> for the customers and developed materials for plant movement.
+                {t("Furthermore, I took on the tasks of ")}<span className="text-[#ffd864]">{t("level design, blocking, and dressing")}</span>{t(". I ")}<span className="text-[#ffd864]">{t("incorporated animations")}</span>{t(" for the customers and developed materials for plant movement.")}
             </p>
             <p className="text-base leading-relaxed mb-4">
-                I also held the responsibility of <span className="text-[#ffd864]">managing both customers and dancers</span> during the night. For customers, I oversaw their entry and exit from the bar, as well as took care of their orders. As for the dancers, I coordinated their patrols throughout different areas of the bar and their performances for the customers' enjoyment.
+                {t("I also held the responsibility of ")}<span className="text - [#ffd864]">{t("managing both customers and dancers")}</span>{t(" during the night. For customers, I oversaw their entry and exit from the bar, as well as took care of their orders. As for the dancers, I coordinated their patrols throughout different areas of the bar and their performances for the customers' enjoyment.")}
             </p>
-        </div>
+        </div >
     );
 };
 
