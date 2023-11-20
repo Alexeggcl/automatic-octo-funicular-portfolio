@@ -9,6 +9,7 @@ import { initReactI18next, I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import translationEN from "../locales/en_translation.json";
 import translationES from "../locales/es_translation.json";
+import type { Metadata } from 'next'
 
 const inter = Comfortaa({ subsets: ['latin'] })
 
@@ -40,6 +41,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const metadata: Metadata = {
+    title: 'Alex | Personal Portfolio',
+    description: 'Alejandro Esteban Gonzalez Gatica is a full-stack and gamedeveloper with 3 years of expirience.',
+  }
+
   return (
     <html lang="en" className="!scroll-smooth">
       <body
