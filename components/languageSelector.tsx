@@ -1,8 +1,8 @@
 "use client"
 
-import { Fragment, useState, useEffect } from 'react'
+import { Listbox, Transition } from '@headlessui/react';
+import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
-import { Listbox, Transition } from '@headlessui/react'
 import { RiExpandUpDownLine } from "react-icons/ri";
 
 const LanguageSwitcher = () => {
@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
 
     useEffect(() => {
         i18n.changeLanguage(selected);
-    }, [selected])
+    }, [selected, i18n])
 
     return (
         <Listbox value={selected} onChange={setSelected}>
