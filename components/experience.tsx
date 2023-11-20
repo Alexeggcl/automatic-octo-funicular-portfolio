@@ -9,15 +9,17 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
     const { ref } = useSectionInView("Experience");
+    const { t } = useTranslation();
 
     return (
         <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-            <SectionHeading>My experience</SectionHeading>
+            <SectionHeading>{t("My experience")}</SectionHeading>
             <VerticalTimeline lineColor="#ffd864">
-                {experiencesData.map((item, index) => ( 
+                {experiencesData.map((item, index) => (
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
                             contentStyle={{
@@ -30,7 +32,7 @@ export default function Experience() {
                             }}
                             contentArrowStyle={{
                                 borderRight: "0.4rem solid #ffd864",
-                            }}  
+                            }}
                             date={item.date}
                             icon={item.icon}
                             iconStyle={{
