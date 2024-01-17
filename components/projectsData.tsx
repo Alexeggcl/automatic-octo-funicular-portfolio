@@ -93,6 +93,95 @@ export const NautilooseTasks = () => {
     );
 };
 
+export const CorrefoomAbout = () => {
+    const { t } = useTranslation();
+    return (
+        <div className="text-base leading-relaxed text-white">
+            <p className="text-base leading-relaxed mb-4">
+                {t("Explore vibrant Valencia in an exhilarating odyssey where magic and tradition collide.  As the courageous Fallera Mayor, armed with a firecracker pistol, recover the stolen Holy Grail from ruthless demons in the majestic cathedral. Traverse the city in flames, confronting infernal enemies amid centuries-old fallas and narrow alleys.")}
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                {t("Do you possess the skill to halt these malevolent intruders? Brace for an explosive fusion of tradition, action, and folklore in this unforgettable pyrotechnic challenge.")}
+            </p>
+            <p className="text-base leading-relaxed mb-4">
+                {t("The battle for Valencia has commenced, and the salvation of the city's sacred flame rests in your hands!")}
+            </p>
+        </div>
+    )
+};
+
+export const CorrefoomDetails = () => {
+    const { t } = useTranslation();
+    return (
+        <div className="text-white">
+            <p className="text-base leading-relaxed">{t("Technologies Used:")}</p>
+            <ul className="list-disc pl-5">
+                <li> <span className="text-[#ffd864]">Unreal Engine 4</span></li>
+                <li> <span className="text-[#ffd864]">Github</span></li>
+                <li>Discord</li>
+            </ul>
+            <p className="text-base leading-relaxed">{t("Programming Language: ")}<span className="text-[#ffd864]">C++</span></p>
+            <p className="text-base leading-relaxed">{t("Available on ")}<span className="text-[#ffd864]">Itch.io</span></p>
+        </div>
+    );
+};
+
+export const CorrefoomTasks = () => {
+    const { t } = useTranslation();
+    return (
+        <div className="text-white">
+
+            <p className="text-base leading-relaxed mb-4">
+                {t("One of my main responsibilities was designing the ")}
+                <span className="text-[#ffd864]">{t("behavior and attacks of enemies")}</span>
+                {t(", specifically the melee, dasher, and the one that spawns enemies upon death. I also implemented the ")}
+                <span className="text-[#ffd864]">{t("player's dash.")}</span>
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                {t("Additionally, I took the lead in creating the ")}
+                <span className="text-[#ffd864]">
+                    {t("statistics system")}
+                </span>
+                {t(" for both the player and enemies. After completing this task, I handled the game's ")}
+                <span className="text-[#ffd864]">
+                    {t("pickables")}
+                </span>
+                {t(", including healing items and devices to reduce weapon overheating.")}
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                {t("On the other hand, I designed the ")}
+                <span className="text-[#ffd864]">
+                    {t("options and credits menu")}
+                </span>
+                {t(". Within the credits, various graphical, sound, gameplay, and language options were incorporated, with support for ")}
+                <span className="text-[#ffd864]">
+                    {t("English, Spanish, and Valencian.")}
+                </span>
+            </p>
+
+            <p className="text-base leading-relaxed mb-4">
+                {t("Finally, I was in charge of a diverse range of ")}
+                <span className="text-[#ffd864]">
+                    {t("in-game visual effects")}
+                </span>
+                {t(", with a particular emphasis on ")}
+                <span className="text-[#ffd864]">
+                    {t("fire")}
+                </span>
+                {t(" effects used in combat zone walls, map boundaries, and enemy projectiles, as well as the implementation of ")}
+                <span className="text-[#ffd864]">
+                    {t("fireworks")}
+                </span>
+                {t(" effects.")}
+            </p>
+
+
+        </div >
+    );
+};
+
 export const NeutrumAbout = () => {
     const { t } = useTranslation();
     return (

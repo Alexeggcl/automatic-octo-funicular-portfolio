@@ -1,4 +1,4 @@
-import ShuvaniAbout, { NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, NeutrumDetails, NeutrumTasks, ParkingAbout, ParkingDetails, ParkingTasks, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
+import ShuvaniAbout, { CorrefoomAbout, CorrefoomDetails, CorrefoomTasks, NautilooseAbout, NautilooseDetails, NautilooseTasks, NeutrumAbout, NeutrumDetails, NeutrumTasks, ParkingAbout, ParkingDetails, ParkingTasks, ShuvaniDetails, ShuvaniTasks } from "@/components/projectsData";
 import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
@@ -31,6 +31,13 @@ import PAFloorList from "@/public/ParkingBooking/ParkingBookingFloorList.png";
 import PAFloorPlan from "@/public/ParkingBooking/ParkingBookingFloorPlan.png";
 import PAStart from "@/public/ParkingBooking/ParkingBookingStart.png";
 import PASummary from "@/public/ParkingBooking/ParkingBookingSummary.png";
+
+import CFCover from "@/public/CorrefoomImages/CorrefoomCover.png"
+import CF1 from "@/public/CorrefoomImages/CF1.png"
+import CF2 from "@/public/CorrefoomImages/CF2.png"
+import CF3 from "@/public/CorrefoomImages/CF3.png"
+import CF4 from "@/public/CorrefoomImages/CF4.png"
+import CFGIF from "@/public/CorrefoomImages/CFGIF.gif";
 
 export const links = [
   {
@@ -97,6 +104,7 @@ export const projectsData = [
       "Shuvani is an Isometric Single Player Roguelike where action and strategy complement each other in a unique combat system based on magic and music.",
     tags: ["Unreal Engine", "C++", "Perforce", "Jenkins"],
     imageUrl: shuvaniImg,
+    bgColor: "bg-gradient-to-r from-lime-950 via-emerald-950 to-emerald-900"
   },
   {
     title: "Nautiloose Club",
@@ -104,6 +112,15 @@ export const projectsData = [
       "Customer, employee and material management in an underwater club. I was a programmer. Created for the IndieSpainJam in one week.",
     tags: ["Unity", "Github", "C#", "IndieSpainJam", "Desing"],
     imageUrl: nautilooseImg,
+    bgColor: "bg-gradient-to-r from-sky-900 via-sky-950 to-sky-950"
+  },
+  {
+    title: "Correfoom",
+    description:
+      "Embark on a fiery journey in Valencia as the Fallera Mayor battles demons for the Holy Grail in this explosive 2.5D FPS odyssey.",
+    tags: ["Unreal Engine", "C++", "Github", "VFX"],
+    imageUrl: CFCover,
+    bgColor: "bg-gradient-to-r from-red-950 via-red-950 to-red-900",
   },
   {
     title: "Neutrum",
@@ -111,6 +128,7 @@ export const projectsData = [
       "Real-time sensor management and monitoring. I was the full-stack developer. It has features like filtering, sorting and paging, as well as a Rest API.",
     tags: ["React", "DevExtreme", "SQL Server", "Java", "Spring"],
     imageUrl: neutrumImg,
+    bgColor: "bg-gradient-to-r from-yellow-900 via-yellow-950 to-yellow-950"
   },
   {
     title: "Parking Booking",
@@ -118,6 +136,7 @@ export const projectsData = [
       "Manage the use and reseravtion of parking spaces in your office, easily and efficiently.",
     tags: ["Archibus", "React", "SQL Server", "Java"],
     imageUrl: PACard,
+    bgColor: "bg-gradient-to-r from-blue-950 via-blue-950 to-blue-900"
   }
 ] as const;
 
@@ -150,6 +169,20 @@ export const projectsDataMoreInfo = [
       NRawPurchase,
       NStuff,
       NTable
+    ]
+  },
+  {
+    title: "Correfoom",
+    video: "XAonbE875gw",
+    about: React.createElement(CorrefoomAbout),
+    details: React.createElement(CorrefoomDetails),
+    gif: CFGIF,
+    myTasks: React.createElement(CorrefoomTasks),
+    imgages: [
+      CF1,
+      CF2,
+      CF3,
+      CF4
     ]
   },
   {
