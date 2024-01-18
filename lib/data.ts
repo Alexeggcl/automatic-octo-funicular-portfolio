@@ -103,40 +103,35 @@ export const projectsData = [
     description:
       "Shuvani is an Isometric Single Player Roguelike where action and strategy complement each other in a unique combat system based on magic and music.",
     tags: ["Unreal Engine", "C++", "Perforce", "Jenkins"],
-    imageUrl: shuvaniImg,
-    bgColor: "bg-gradient-to-r from-lime-950 via-emerald-950 to-emerald-900"
+    imageUrl: shuvaniImg
   },
   {
     title: "Nautiloose Club",
     description:
       "Customer, employee and material management in an underwater club. I was a programmer. Created for the IndieSpainJam in one week.",
     tags: ["Unity", "Github", "C#", "IndieSpainJam", "Desing"],
-    imageUrl: nautilooseImg,
-    bgColor: "bg-gradient-to-r from-sky-900 via-sky-950 to-sky-950"
+    imageUrl: nautilooseImg
   },
   {
     title: "Correfoom",
     description:
       "Embark on a fiery journey in Valencia as the Fallera Mayor battles demons for the Holy Grail in this explosive 2.5D FPS odyssey.",
     tags: ["Unreal Engine", "C++", "Github", "VFX"],
-    imageUrl: CFCover,
-    bgColor: "bg-gradient-to-r from-red-950 via-red-950 to-red-900",
+    imageUrl: CFCover
   },
   {
     title: "Neutrum",
     description:
       "Real-time sensor management and monitoring. I was the full-stack developer. It has features like filtering, sorting and paging, as well as a Rest API.",
     tags: ["React", "DevExtreme", "SQL Server", "Java", "Spring"],
-    imageUrl: neutrumImg,
-    bgColor: "bg-gradient-to-r from-yellow-900 via-yellow-950 to-yellow-950"
+    imageUrl: neutrumImg
   },
   {
     title: "Parking Booking",
     description:
       "Manage the use and reseravtion of parking spaces in your office, easily and efficiently.",
     tags: ["Archibus", "React", "SQL Server", "Java"],
-    imageUrl: PACard,
-    bgColor: "bg-gradient-to-r from-blue-950 via-blue-950 to-blue-900"
+    imageUrl: PACard
   }
 ] as const;
 

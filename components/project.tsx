@@ -13,8 +13,7 @@ export default function Project({
     title,
     description,
     tags,
-    imageUrl,
-    bgColor
+    imageUrl
 }: ProjectProps) {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
@@ -52,6 +51,14 @@ export default function Project({
         };
     }, [isPopupOpen]);
 
+    const colorVariants = {
+        Shuvani: "bg-gradient-to-r from-lime-950 via-emerald-950 to-emerald-900",
+        "Nautiloose Club": "bg-gradient-to-r from-sky-900 via-sky-950 to-sky-950",
+        "Correfoom": "bg-gradient-to-r from-red-950 via-red-950 to-red-900",
+        "Neutrum": "bg-gradient-to-r from-yellow-900 via-yellow-950 to-yellow-950",
+        "Parking Booking": "bg-gradient-to-r from-blue-950 via-blue-950 to-blue-800"
+    }
+
     return (
         <>
             {isPopupOpen && <ProjectDetails
@@ -68,7 +75,7 @@ export default function Project({
                 }}
                 className="group mb-3 sm:mb-8 last:mb-0"
             >
-                <section className={"max-w-[42rem] border border-[#ffd864] rounded-lg overflow-hidden sm:pr-8 relative sm:h-[23rem] transition sm:group-even:pl-8 text-white " + bgColor}>
+                <section id={title} className={`max-w-[42rem] border border-[#ffd864] rounded-lg overflow-hidden sm:pr-8 relative sm:h-[23rem] transition sm:group-even:pl-8 text-white ${colorVariants[title]}`}>
                     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] max-sm:pt-[15rem]">
                         <h3 className="text-2xl font-semibold text-[#ffd864]">{title}</h3>
                         <p className="mt-2 leading-relaxed text-white">
