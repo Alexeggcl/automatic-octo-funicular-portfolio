@@ -33,7 +33,7 @@ export default function Experience() {
                             contentArrowStyle={{
                                 borderRight: "0.4rem solid #ffd864",
                             }}
-                            date={item.date}
+                            date={t(item.date)}
                             icon={item.icon}
                             iconStyle={{
                                 background: "#111827",
@@ -45,7 +45,7 @@ export default function Experience() {
                             <h3 className="font-semibold capitalize text-[#ffd864]">{item.title}</h3>
                             <p className="font-normal !mt-0 text-[#ffd864]">{item.location}</p>
                             <p className="!mt-1 !font-normal text-white">
-                                {item.description}
+                                {t(item.description)}
                             </p>
                         </VerticalTimelineElement>
                     </React.Fragment>
