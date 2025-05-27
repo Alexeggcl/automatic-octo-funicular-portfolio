@@ -2,7 +2,7 @@ import ShuvaniAbout, { CorrefoomAbout, CorrefoomDetails, CorrefoomTasks, Nautilo
 import nautilooseImg from "@/public/Nautiloose.png";
 import neutrumImg from "@/public/Neutrum.png";
 import shuvaniImg from "@/public/Shuvani_cover.png";
-import shuvaniReward from "@/public/ShuvaniImages/RewardPedestal.png";
+import shuvaniReward from "@/public/ShuvaniImages/RewardPedestal.webp";
 import SPickables from "@/public/ShuvaniImages/SPickables.png";
 import SLaser from "@/public/ShuvaniImages/SLaser.png";
 import SEmemies from "@/public/ShuvaniImages/SEnemies.png";
@@ -25,12 +25,12 @@ import NEMap from "@/public/NeutrumImages/NEMap.png";
 import NESensorForm from "@/public/NeutrumImages/NESensorForm.png";
 import NESensors from "@/public/NeutrumImages/NESensors.png";
 
-import PACard from "@/public/ParkingBooking/ParkingBookingCard.png";
-import PACalendar from "@/public/ParkingBooking/ParkingBookingCalendar.png";
-import PAFloorList from "@/public/ParkingBooking/ParkingBookingFloorList.png";
-import PAFloorPlan from "@/public/ParkingBooking/ParkingBookingFloorPlan.png";
-import PAStart from "@/public/ParkingBooking/ParkingBookingStart.png";
-import PASummary from "@/public/ParkingBooking/ParkingBookingSummary.png";
+import PACard from "@/public/ParkingBooking/ParkingBookingCard.webp";
+import PACalendar from "@/public/ParkingBooking/ParkingBookingCalendar.webp";
+import PAFloorList from "@/public/ParkingBooking/ParkingBookingFloorList.webp";
+import PAFloorPlan from "@/public/ParkingBooking/ParkingBookingFloorPlan.webp";
+import PAStart from "@/public/ParkingBooking/ParkingBookingStart.webp";
+import PASummary from "@/public/ParkingBooking/ParkingBookingSummary.webp";
 
 import CFCover from "@/public/CorrefoomImages/CorrefoomCover.png"
 import CF1 from "@/public/CorrefoomImages/CF1.png"
@@ -64,20 +64,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Bachelor Degree in Computer Engineering",
-    location: "Universidad Politécnica de Madrid",
-    description:
-      "I graduated after 4 years of studying. I immediately found a job as a full-stack developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018 - 2022",
-  },
-  {
     title: "Full-Stack Developer - Project Manager",
     location: "Archibus Solution Center",
     description:
       "During my internship, I played a crucial role in managing multiple client projects, overseeing effective communication, leading weekly progress meetings, providing technical support for incidents, and documenting new requirements as my responsibilities expanded within the team.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - present",
+  },
+  {
+    title: "Game Developer",
+    location: "Raging Games",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaGamepad),
+    date: "2022 - 2025",
   },
   {
     title: "Master Degree in Video Game Development",
@@ -88,13 +88,13 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
-    title: "Game Developer",
-    location: "Raging Games",
+    title: "Bachelor Degree in Computer Engineering",
+    location: "Universidad Politécnica de Madrid",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaGamepad),
-    date: "2022 - present",
-  },
+      "I graduated after 4 years of studying. I immediately found a job as a full-stack developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018 - 2022",
+  }
 ] as const;
 
 export const projectsData = [
@@ -143,7 +143,7 @@ export const projectsDataMoreInfo = [
     details: React.createElement(ShuvaniDetails),
     gif: shuvaniGIF,
     myTasks: React.createElement(ShuvaniTasks),
-    imgages: [
+    images: [
       shuvaniReward,
       SPickables,
       SLaser,
@@ -158,7 +158,7 @@ export const projectsDataMoreInfo = [
     details: React.createElement(NautilooseDetails),
     gif: NGIF,
     myTasks: React.createElement(NautilooseTasks),
-    imgages: [
+    images: [
       NInGame,
       NMainMenu,
       NRawPurchase,
@@ -173,7 +173,7 @@ export const projectsDataMoreInfo = [
     details: React.createElement(CorrefoomDetails),
     gif: CFGIF,
     myTasks: React.createElement(CorrefoomTasks),
-    imgages: [
+    images: [
       CF1,
       CF2,
       CF3,
@@ -187,7 +187,7 @@ export const projectsDataMoreInfo = [
     details: React.createElement(NeutrumDetails),
     gif: null,
     myTasks: React.createElement(NeutrumTasks),
-    imgages: [
+    images: [
       NEAggregated,
       NELocations,
       NEMap,
@@ -202,7 +202,7 @@ export const projectsDataMoreInfo = [
     details: React.createElement(ParkingDetails),
     gif: null,
     myTasks: React.createElement(ParkingTasks),
-    imgages: [
+    images: [
       PAStart,
       PAFloorPlan,
       PAFloorList,
