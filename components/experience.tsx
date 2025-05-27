@@ -42,8 +42,8 @@ export default function Experience() {
                                 boxShadow: "0 0 0 4px #ffd864, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"
                             }}
                         >
-                            <h3 className="font-semibold capitalize text-[#ffd864]">{item.title}</h3>
-                            <p className="font-normal !mt-0 text-[#ffd864]">{item.location}</p>
+                            <h3 className="font-semibold capitalize text-[#ffd864]">{t(item.title)}</h3>
+                            <p className="font-normal !mt-0 text-[#ffd864]">{t(item.location)}</p>
                             <p className="!mt-1 !font-normal text-white">
                                 {t(item.description)}
                             </p>
